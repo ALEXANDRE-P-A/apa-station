@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
+  app.use("/", express.static(path.join(__dirname, "src")));
   res.sendFile(path.join(__dirname, "src", "index.html"));
 });
 
