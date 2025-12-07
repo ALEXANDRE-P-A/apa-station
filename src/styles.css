@@ -1,9 +1,8 @@
 body {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-color: #161d26;
+  height: 100vh;
+  background-color: #161d26;;
 }
 
 .top {
@@ -20,7 +19,8 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 1em;
-  color: #fff
+  color: #fff;
+  font-weight: 500;
 }
 
 .bottom {
@@ -56,6 +56,11 @@ li a {
 li a:hover, .tab span:hover {
   font-weight: bold;
   text-decoration: underline;
+}
+
+a.disabled {
+  pointer-events: none;
+  opacity: .5;
 }
 
 .right {

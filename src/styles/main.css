@@ -1,0 +1,17 @@
+:root {
+  --main-padding: 15px;
+}
+
+main {
+  width: calc(100% - (var(--main-padding) * 2));
+  height: calc(100% - (var(--main-padding) * 2));
+  padding: var(--main-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) { 
+  main {
+    flex-wrap: wrap;
+  }
+}

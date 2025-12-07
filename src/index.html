@@ -3,50 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no  shrink-to-fit=no" />
+  <meta name="theme-color" content="#161d26" />
+  <meta
+      name="description"
+      content="APA station applicatins main page"
+    />
+  <link rel="apple-touch-icon" href="./public/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./styles/body.css">
+  <link rel="stylesheet" type="text/css" href="./styles/header.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  <link rel="stylesheet" type="text/css" href="./styles/items.css">
+  <link rel="stylesheet" type="text/css" href="./styles/footer.css">
   <title>APA Station</title>
 </head>
 <body>
 
-  <section class="top">
-    <img src="./images/logo.png" alt="logo" style="height: 50%; margin-bottom: -5px;  margin-right: 15px;">
-    <h1>aPa station</h1>
-  </section>
+  <header>
+    <div class="header-side left">
+      <img src="./images/logo.png" alt="logo" class="header-logo" />
+    </div>
+    <div class="header-title">
+      <h1>APA Station</h1>
+    </div>
+    <div class="header-side right"></div>
+  </header>
 
-  <section class="bottom">
-    <section class="left">
-      <ul>
-        <li><a href="/todo-app"><span>aPa Todo App</span></a></li>
-        <li><a href="/music-sampler"><span>aPa Music Sampler</span></a></li>
-        <li><a href="/camera-app"><span>aPa Camera App</span></a></li>
-        <li><a href="/typing-game"><span>aPa Typing Game</span></a></li>
-      </ul>
-    </section>
+  <main>
+    
+    <div class="items">
 
-    <section class="right">
-
-      <div class="tabs">
-
-        <div class="tab">
-          <span>App Image</span>
+      <a href="/todo-app/" class="item-div">
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/logo-apa-todo.png" alt="apa-todo-pp-logo" class="item-left-logo" />
+          </div>
+          <div class="item-right">
+            <span>Task Manage App</span>
+          </div>
         </div>
-        <div class="tab">
-          <span>Description</span>
+      </a>
+
+      <a href="/music-sampler/" class="item-div disabled">
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/logo-apa-sampler.png" alt="apa-sampler-logo" class="item-left-logo" />
+          </div>
+          <div class="item-right">
+            <span>Music Sampler</span>
+          </div>
         </div>
-        <div class="tab">
-          <span>Source Code</span>
+      </a>
+
+      <a href="/typing-game/" class="item-div disabled">
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/logo-apa-type-app.png" alt="apa-typing-game-logo" class="item-left-logo" />
+          </div>
+          <div class="item-right">
+            <span>Typing Game</span>
+          </div>
         </div>
+      </a>
 
-      </div>
+    </div>
 
-      <div class="content">tab1</div>
+    <div class="items">
 
-      <div class="content hidden">tab2</div>
+      <a href="/camera-app/" class="item-div disabled">
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/logo-apa-camera.png" alt="apa-camera-app-logo" class="item-left-logo" />
+          </div>
+          <div class="item-right">
+            <span>Camera App</span>
+          </div>
+        </div>
+      </a>
 
-      <div class="content hidden">tab3</div> 
+    </div>
+    
+  </main>
 
-    </section>
-  </section>
-  <script type="text/javascript" src="./main.js"></script>
+  <!-- <script type="text/javascript" src="./main.js"></script> -->
 </body>
 </html>
